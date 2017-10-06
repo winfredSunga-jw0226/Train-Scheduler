@@ -33,12 +33,8 @@ database.ref("/train-schedules").on("child_added", function(snapshot) {
   frequencyMinutes = sv.frequencyMinutes;
   firstArrivalTime = moment({hour : sv.firstArrivalTime.split(":")[0], minute : sv.firstArrivalTime.split(":")[1]}); 
 
-  // console.log("first arrival time : " + firstArrivalTime);
-
   //get the total # of minutes elapsed from the start time - this will help us derived the minutes away value
-  var minutesElapsedFromFirstArrival = calculateMinutesElapsed(); //moment().diff(firstArrivalTime, "minutes");
-
-  // console.log("minutesElapsedFromFirstArrival : " + minutesElapsedFromFirstArrival);
+  var minutesElapsedFromFirstArrival = calculateMinutesElapsed(); 
 
   //derive the minutes away value
   var minutesAway = calculateMinutesAway(minutesElapsedFromFirstArrival, frequencyMinutes); 
