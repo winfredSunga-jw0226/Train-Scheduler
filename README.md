@@ -1,4 +1,4 @@
-# Train-Schedule
+# Train-Scheduler
 This is a train schedule application which provides up-to-date information about various trains - their arrival times and how many minutes remain until they arrive at their station.
 
 ### How This Works
@@ -18,7 +18,7 @@ After submission, the train schedule panel displays the  information about the t
 ### Demo
 
 ### Your Turn To Try
-Want to start playing with the app? Go ahead and click on this link --> []()  
+Want to start playing with the app? Go ahead and click on this link --> [Train Scheduler](https://winfredsunga-jw0226.github.io/Train-Scheduler/)  
 
 ### Tech Details
 This app is powered by
@@ -28,3 +28,4 @@ This app is powered by
  * jQuery
  * Firebase
  * Moment.js
+
